@@ -17,10 +17,12 @@ channel.QueueDeclare(queue: "example-queue", exclusive: false);//Consumer-da da 
 // Queue-dən messaj Oxuma
 
 EventingBasicConsumer consumer=new(channel);
-channel.BasicConsume(queue: "example-queue", false, consumer);
+channel.BasicConsume(queue: "example-queue", autoAck: false, consumer);
+channel.BasicQos(0, 1, false);
 consumer.Received += (sender, e) =>
 {
     Console.WriteLine(Encoding.UTF8.GetString(e.Body.Span));
+    channel.BasicAck(deliveryTag: e.DeliveryTag, multiple: false);
 };
 Console.Read();
 

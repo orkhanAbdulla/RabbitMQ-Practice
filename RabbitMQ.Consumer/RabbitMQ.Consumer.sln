@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32804.467
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RabbitMQ.Consumer", "RabbitMQ.Consumer\RabbitMQ.Consumer.csproj", "{1B170B6F-C966-4AF6-9F6B-6AC81F1E256E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RabbitMQ.Consumer", "RabbitMQ.Consumer\RabbitMQ.Consumer.csproj", "{1B170B6F-C966-4AF6-9F6B-6AC81F1E256E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RabbitMQ.Direct.Exchange.Consumer", "RabbitMQ.Direct.Exchange.Consumer\RabbitMQ.Direct.Exchange.Consumer.csproj", "{6BFAD404-9683-428D-96CF-19F209825420}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RabbitMQ.Fanout.Exchange.Consumer", "RabbitMQ.Fanout.Exchange.Consumer\RabbitMQ.Fanout.Exchange.Consumer.csproj", "{6C47EAC4-241E-4D35-9FC5-DAC27A595B45}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{1B170B6F-C966-4AF6-9F6B-6AC81F1E256E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1B170B6F-C966-4AF6-9F6B-6AC81F1E256E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1B170B6F-C966-4AF6-9F6B-6AC81F1E256E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6BFAD404-9683-428D-96CF-19F209825420}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6BFAD404-9683-428D-96CF-19F209825420}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6BFAD404-9683-428D-96CF-19F209825420}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6BFAD404-9683-428D-96CF-19F209825420}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6C47EAC4-241E-4D35-9FC5-DAC27A595B45}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C47EAC4-241E-4D35-9FC5-DAC27A595B45}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C47EAC4-241E-4D35-9FC5-DAC27A595B45}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C47EAC4-241E-4D35-9FC5-DAC27A595B45}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
